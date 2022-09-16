@@ -1,0 +1,109 @@
+
+.container{
+    max-width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+*{
+padding: 0px;
+margin: 0px;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+}
+.container .text-title h1{
+    text-align: center;
+    margin-top: 35px;
+    color: rgb(93, 153, 153);
+    font-family: 'Lobster', cursive;
+    
+}
+.container .text-title p{
+    width: 80%;
+    line-height: 1.6;
+    opacity: .5;
+    margin: auto;
+}
+
+.container .navbar{
+    display: flex;
+    justify-content:center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+}
+.container .navbar li{
+    list-style: none;
+    margin-right: 25px;
+    cursor: pointer;
+    position: relative;
+
+}
+.navbar li.active{
+    color: chocolate;
+}
+.navbar li::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    background-color: coral;
+    height: 2px;
+    width: 100%;
+    left: 50%;
+    display: none;
+    transition: .3s ease-in-out;
+}
+.navbar li:hover::after{
+    display: block;
+    left: 0px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    width: 32%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    animation:  displayaple .5s ease-in-out;
+}
+.box .imges{
+    width: 35%;
+}
+.imges img{
+    width: 100%;
+}
+.box .text{
+    width: 60%;
+    text-align: left;
+}
+.box .text h3{
+font-size: 18px;
+}
+.text hr {
+    width: 50px;
+    height: 3px;
+    /* margin: auto; */
+    background-color: darkorange;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+@keyframes displayaple {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
